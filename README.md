@@ -4,10 +4,12 @@ A lightwight port of Neofetch written in C
 This programs aim is to be a complete port of the popular Linux program Neofetch
 
 >Why do we need this?
+
 You don't
 
 
 >Why should I install this?
+
 You shouldn't
 
 
