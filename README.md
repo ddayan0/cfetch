@@ -24,6 +24,6 @@ This is merely a proof of concept and a project to help me learn C
  
 ## How to run:
  - ***gcc cfectch.c***
- - ***./a,out***
+ - ***./a.out***
 
 
