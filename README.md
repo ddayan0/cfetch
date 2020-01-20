@@ -5,8 +5,12 @@ This programs aim is to be a complete port of the popular Linux program Neofetch
 
 >Why do we need this?
 You don't
+
+
 >Why should I install this?
 You shouldn't
+
+
 
 This is merely a proof of concept and a project to help me learn C
 
