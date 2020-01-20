@@ -2,8 +2,8 @@
 #include <sys/utsname.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX_CHAR_SIZE 255
-struct sytruct
+#define MAX_CHAR_SIZE 255 // could be lower, but works for now
+struct sytruct // sets every char array to have a maximum size of 255 for the struct to compile
 {
 
 	char *kernname [MAX_CHAR_SIZE];
@@ -32,7 +32,7 @@ void concat(const char *s1, const char *s2)
 
 
 
-void ascii(){
+void ascii(){ //fancy ascii for looks. could be removed if needed
 	 printf(R"EOF(
 	
                                                                  #####
@@ -51,7 +51,7 @@ void ascii(){
 }
 
 void sysinfo(){
-	SYS_INFO.kernname == system("uname -s");
+	SYS_INFO.kernname == system("uname -s"); // all uname code below just executes the uname command
 	SYS_INFO.nodename == system("uname -n");
 	SYS_INFO.kernrel == system("uname -r");
 	SYS_INFO.kernver == system("uname -v");
@@ -59,7 +59,7 @@ void sysinfo(){
 	SYS_INFO.processor == system("uname -p");
 	SYS_INFO.hwplat == system("uname -i");
 	SYS_INFO.os == system("uname -o");
-	printf("\n", SYS_INFO.kernname);	
+	printf("\n", SYS_INFO.kernname); // all printf statements below just print the output of the uname commands	
 	printf("\n", SYS_INFO.nodename);
 	printf("\n", SYS_INFO.kernrel);
 	printf("\n", SYS_INFO.kernver);
