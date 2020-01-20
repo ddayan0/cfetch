@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <sys/utsname.h>
+#include <stdlib.h>
+#include <string.h>
 #define MAX_CHAR_SIZE 255
 struct sytruct
 {
@@ -13,6 +15,21 @@ struct sytruct
 	char *hwplat [MAX_CHAR_SIZE];
 	char *os [MAX_CHAR_SIZE];
 } SYS_INFO;
+
+
+
+void concat(const char *s1, const char *s2)
+{
+    const size_t len1 = strlen(s1);
+    const size_t len2 = strlen(s2);
+    char *result = malloc(len1 + len2 + 1); // +1 for the null-terminator
+    memcpy(result, s1, len1);
+    memcpy(result + len1, s2, len2 + 1); // +1 to copy the null-terminator
+    printf("\n", result);
+} //code found on stackoverflow: https://stackoverflow.com/questions/8465006/how-do-i-concatenate-two-strings-in-c
+
+
+
 
 
 void ascii(){
@@ -50,6 +67,7 @@ void sysinfo(){
 	printf("\n", SYS_INFO.processor);
 	printf("\n", SYS_INFO.hwplat);
 	printf("\n", SYS_INFO.os);
+	concat("Kernel Version: ", SYS_INFO.kernrel);
 }
 
 
