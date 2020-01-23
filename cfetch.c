@@ -2,6 +2,7 @@
 #include <sys/utsname.h>
 #include <stdlib.h>
 #include <string.h>
+#define TRUE 0
 #define MAX_CHAR_SIZE 255 // could be lower, but works for now
 struct sytruct // sets every char array to have a maximum size of 255 for the struct to compile
 {
@@ -18,15 +19,20 @@ struct sytruct // sets every char array to have a maximum size of 255 for the st
 
 
 
-void concat(const char *s1, const char *s2)
-{
-    const size_t len1 = strlen(s1);
-    const size_t len2 = strlen(s2);
-    char *result = malloc(len1 + len2 + 1); // +1 for the null-terminator
-    memcpy(result, s1, len1);
-    memcpy(result + len1, s2, len2 + 1); // +1 to copy the null-terminator
-    printf("\n", result);
-} //code found on stackoverflow: https://stackoverflow.com/questions/8465006/how-do-i-concatenate-two-strings-in-c
+// put concat func here
+
+void terminal(){ //terminal functionalty, still need to add a quit function 
+        static volatile char userinp [] = "";
+        printf("Welcome to dayterm!\n");
+        printf("Enter a command\n");
+        while(TRUE == 0){
+                printf("%s", ">>");
+                scanf("%s", &userinp);
+                system(&userinp);
+                printf("\n", &userinp);
+        }
+}
+
 
 
 
@@ -67,7 +73,7 @@ void sysinfo(){
 	printf("\n", SYS_INFO.processor);
 	printf("\n", SYS_INFO.hwplat);
 	printf("\n", SYS_INFO.os);
-//	concat("Kernel Version: ", SYS_INFO.kernrel);
+	terminal();
 }
 
 

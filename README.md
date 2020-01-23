@@ -1,7 +1,7 @@
 # cfetch (WORK IN PROGRESS)
-A lightwight port of Neofetch written in C
+A lightwight system info/terminal written in C
 
-This programs aim is to be a complete port of the popular Linux program Neofetch
+Eventually this program shoudl accept flags and portray a custom ascii image for any linux distro.
 
 >Why do we need this?
 
