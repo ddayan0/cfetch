@@ -67,7 +67,7 @@ void sysinfo(){
 	printf("\n", SYS_INFO.processor);
 	printf("\n", SYS_INFO.hwplat);
 	printf("\n", SYS_INFO.os);
-	concat("Kernel Version: ", SYS_INFO.kernrel);
+//	concat("Kernel Version: ", SYS_INFO.kernrel);
 }
 
 

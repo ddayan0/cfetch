@@ -26,4 +26,5 @@ This is merely a proof of concept and a project to help me learn C
  - ***gcc cfectch.c***
  - ***./a.out***
 
-
+## IMPORTANT!:
+- ***DELETE ANY A.OUT FILES PRESENT WHEN YOU IMMEDIATELY CLONE THIS REPO***
