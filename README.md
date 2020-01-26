@@ -1,7 +1,7 @@
 # cfetch (WORK IN PROGRESS)
 A lightwight system info/terminal written in C
 
-Eventually this program shoudl accept flags and portray a custom ascii image for any linux distro.
+Eventually this program should accept flags and portray a custom ascii image for any linux distro.
 
 >Why do we need this?
 

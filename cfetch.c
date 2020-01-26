@@ -22,12 +22,12 @@ struct sytruct // sets every char array to have a maximum size of 255 for the st
 // put concat func here
 
 void terminal(){ //terminal functionalty, still need to add a quit function 
-        static volatile char userinp [] = "";
+        char userinp [] = "";
         printf("Welcome to dayterm!\n");
         printf("Enter a command\n");
         while(TRUE == 0){
                 printf("%s", ">>");
-                scanf("%s", &userinp);
+                scanf("%s\-", &userinp);
                 system(&userinp);
                 printf("\n", &userinp);
         }
